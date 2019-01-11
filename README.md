@@ -34,4 +34,4 @@ chmod 775 redshift.sh
 
 ### Acknowledgments:
 
-Thanks to [@sbrl](https://github.com/sbrl) for his great idea to use ```ipinfo.io```
+Thanks to [@sbrl](https://github.com/sbrl) for his great ideas.
