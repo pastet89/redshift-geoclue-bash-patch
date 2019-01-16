@@ -7,14 +7,24 @@ running_check() {
         eval $(echo msg_title="Success")
         if [[ $2 == "1" ]]; then
             notify-send "$msg_title" "Redshift started with proper local coordinates!"
-        else
+        elif [[ $2 == "2" ]]; then
             notify-send "$msg_title" "Redshift started with 0:0 coordinates!"
         fi
     else
+        if [[ $2 != "0" ]]; then
+            notify-send "$msg_title" "Redshift can't be started!"
+        fi
         eval $(echo msg_title="Fail")
-        notify-send "$msg_title" "Redshift can't be started!"
     fi
 }
+: '
+Check if redshift is already started and if yes, exit
+'
+running_check "$(ps ax | grep redshift)" "0"
+if [[ $msg_title == "Success" ]]; then
+    notify-send "Status:" "Redshift already started!"
+    exit 1
+fi
 : '
 Provided that the script can be run immediately after
 the computer startup, wait max_timeout seconds trying to verify that
