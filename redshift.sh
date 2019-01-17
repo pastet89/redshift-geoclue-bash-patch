@@ -22,7 +22,7 @@ Check if redshift is already started and if yes, exit
 '
 running_check "$(ps ax | grep redshift)" "0"
 if [[ $msg_title == "Success" ]]; then
-    notify-send "Status:" "Redshift already started!"
+    notify-send "Status:" "Redshift already running!"
     exit 1
 fi
 : '
