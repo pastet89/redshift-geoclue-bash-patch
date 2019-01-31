@@ -1,4 +1,4 @@
-## Basic bash patch for redshift/geoclue
+## Bash geoclue patch for redshift
 
 ### About
 
