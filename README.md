@@ -13,12 +13,19 @@ slightly modifies [@sbrl](https://github.com/sbrl)'s great solution of this prob
 It first tries to get the coordinates from ipinfo.io and if it fails, runs the program with default
 coordinates of 0:0.
 
+### Requirements:
+
+1. Linux environment
+2. Redshift
+2. jq
+
 ### Installation:
 
-The patch assumes that you have already installed redshift:
+The patch assumes that you have already installed redshift.
+You will need also ```jq```:
 
 ```
-sudo apt-get install redshift
+sudo apt-get install redshift jq
 ```
 
 Make the script executable:
