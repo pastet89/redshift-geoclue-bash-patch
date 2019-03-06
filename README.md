@@ -41,4 +41,4 @@ chmod 775 redshift.sh
 
 ### Acknowledgments:
 
-Thanks to [@sbrl](https://github.com/sbrl) for his great ideas.
+Thanks to [@sbrl](https://github.com/sbrl) for their great ideas.
